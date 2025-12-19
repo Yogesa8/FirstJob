@@ -28,7 +28,7 @@ const ContactPage = () => {
                         <div>
                             <p className="text-sm font-semibold">Email</p>
                             <p className="text-gray-300 text-sm">
-                                support@yourmail.com
+                                akashucarrer@gmail.com
                             </p>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ const ContactPage = () => {
                         <div>
                             <p className="text-sm font-semibold">Phone</p>
                             <p className="text-gray-300 text-sm">
-                                +91 98765 43210
+                                +91 9211526625
                             </p>
                         </div>
                     </div>
@@ -54,7 +54,7 @@ const ContactPage = () => {
                         <div>
                             <p className="text-sm font-semibold">Address</p>
                             <p className="text-gray-300 text-sm">
-                                230 Norman Street, New York, NY
+                                TA3107, 2nd Floor, Tughlak Extension, Main Okhla Road, Kalkaji, South Delhi, New Delhi, Delhi, India  110019
                             </p>
                         </div>
                     </div>
@@ -62,14 +62,9 @@ const ContactPage = () => {
 
                 {/* RIGHT SIDE - MAP */}
                 <div className="rounded-2xl overflow-hidden shadow-sm min-h-[420px]">
-                    <iframe
-                        title="location-map"
-                        src="https://www.google.com/maps?q=New%20York&output=embed"
-                        className="w-full h-full border-0"
-                        loading="lazy"
-                    />
+                    <iframe title="location-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11536.803706363724!2d77.23588906642564!3d28.544175152543065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3dafbf6e101%3A0x35304d4b868464b5!2s2nd%20floor%2C%20Block%20E%2C%20Kalkaji%2C%20New%20Delhi%2C%20Delhi%20110019!5e1!3m2!1sen!2sin!4v1766164532182!5m2!1sen!2sin"  loading="lazy"  className="w-full h-full border-0"></iframe>
+                
                 </div>
-
             </div>
         </section>
     )
