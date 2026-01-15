@@ -1,0 +1,296 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+/* .rte-container {
+  width: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  font-family: Inter, system-ui, sans-serif;
+  background: #fff;
+}
+
+.rte-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.rte-toolbar button {
+  border: none;
+  background: #f3f4f6;
+  padding: 6px 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.rte-toolbar button:hover {
+  background: #c2c2c2;
+}
+
+.rte-toolbar button.active {
+  background: #d9e2ff;
+  border-color: #6366f1;
+  color: #4338ca;
+}
+
+.divider {
+  width: 1px;
+  height: 20px;
+  background: #e5e7eb;
+  margin: 0 4px;
+}
+
+.rte-editor {
+  padding: 5px;
+  min-height: 80px;
+  outline: none;
+  font-size: 16px;
+  line-height: 1.6;
+  max-height: 80px;
+  overflow-x: auto;
+}
+
+.rte-editor .ProseMirror p {
+  height: auto;
+}
+
+.tiptap.ProseMirror:focus,
+.tiptap.ProseMirror:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.rte-editor p {
+  margin: 0 0;
+}
+
+.rte-editor ul {
+  list-style-type: disc;
+  padding-left: 24px;
+  margin: 0 0;
+}
+
+.rte-editor ol {
+  list-style-type: decimal;
+  padding-left: 24px;
+  margin: 0 0;
+}
+
+.rte-divider {
+  width: 1px;
+  height: 30px;
+  background-color: rgb(180, 180, 180);
+  margin: 0 10px;
+} */
+
+/* BASE STYLES (Default - Desktop/LG) */
+.rte-container {
+  width: 100%;
+  /* Full width by default */
+  max-width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  font-family: Inter, system-ui, sans-serif;
+  background: #fff;
+  box-sizing: border-box;
+  /* Ensures padding doesn't overflow width */
+}
+
+.rte-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  /* Allows buttons to wrap on smaller screens */
+  gap: 6px;
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.rte-toolbar button {
+  border: none;
+  background: #f3f4f6;
+  padding: 6px 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.rte-toolbar button:hover {
+  background: #c2c2c2;
+}
+
+.rte-toolbar button.active {
+  background: #d9e2ff;
+  border-color: #6366f1;
+  color: #4338ca;
+}
+
+.divider {
+  width: 1px;
+  height: 20px;
+  background: #e5e7eb;
+  margin: 0 4px;
+}
+
+.rte-editor {
+  padding: 10px;
+  /* Slightly more padding for desktop */
+  min-height: 100px;
+  /* Increased height slightly for better readability */
+  max-height: 300px;
+  /* Allow scrolling on desktop if text is long */
+  outline: none;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-y: auto;
+  /* Vertical scroll */
+  overflow-x: hidden;
+}
+
+.rte-editor .ProseMirror p {
+  height: auto;
+}
+
+.tiptap.ProseMirror:focus,
+.tiptap.ProseMirror:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* TEXT & LIST FIX */
+.rte-editor p {
+  margin: 0 0;
+}
+
+.rte-editor ul {
+  list-style-type: disc;
+  padding-left: 24px;
+  margin: 0 0;
+}
+
+.rte-editor ol {
+  list-style-type: decimal;
+  padding-left: 24px;
+  margin: 0 0;
+}
+
+.rte-divider {
+  width: 1px;
+  height: 30px;
+  background-color: rgb(180, 180, 180);
+  margin: 0 10px;
+}
+
+/* =========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================= */
+
+/* MD (Medium Devices - Tablets, 641px to 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .rte-toolbar {
+    gap: 5px;
+    padding: 8px;
+  }
+
+  .rte-toolbar button {
+    padding: 6px 7px;
+    font-size: 13px;
+  }
+
+  .rte-editor {
+    font-size: 15px;
+    padding: 8px;
+  }
+}
+
+/* SM (Small Devices - Mobile Phones, max 640px) */
+@media (max-width: 640px) {
+
+  /* Container adjustments */
+  .rte-container {
+    border-radius: 8px;
+    /* Slightly smaller border radius on mobile */
+  }
+
+  /* Toolbar adjustments */
+  .rte-toolbar {
+    gap: 4px;
+    padding: 6px;
+    justify-content: flex-start;
+    /* Align left, buttons will wrap automatically */
+  }
+
+  /* Button adjustments - Making touch targets compact */
+  .rte-toolbar button {
+    padding: 4px 6px;
+    /* Reduced padding to fit more buttons */
+    font-size: 12px;
+    /* Smaller text */
+    border-radius: 4px;
+    min-width: 30px;
+    /* Ensure minimum touch area */
+  }
+
+  /* Hide dividers or reduce them on very small screens if needed, 
+     but keeping them with adjusted height */
+  .divider {
+    height: 18px;
+    margin: 0 2px;
+  }
+
+  .rte-divider {
+    height: 24px;
+    margin: 0 6px;
+  }
+
+  /* Editor adjustments */
+  .rte-editor {
+    padding: 8px;
+    min-height: 80px;
+    max-height: 150px;
+    /* Limit height on mobile to save screen space */
+    font-size: 14px;
+    /* Readable mobile font size */
+    line-height: 1.5;
+  }
+
+  /* Adjust list padding for mobile */
+  .rte-editor ul,
+  .rte-editor ol {
+    padding-left: 20px;
+  }
+}
+
+/* LG (Large Devices - Desktops, min 1025px) */
+@media (min-width: 1025px) {
+  .rte-container {
+    /* You can set a max-width here if you want the editor centered 
+       instead of full width on large screens */
+    /* max-width: 800px; */
+    /* margin: 0 auto; */
+  }
+
+  .rte-editor {
+    max-height: 400px;
+    /* More space on large screens */
+  }
+}
+
+/* index.css ke andar */
+.preview-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  /* Indentation */
+}
+
+.preview-content ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+}

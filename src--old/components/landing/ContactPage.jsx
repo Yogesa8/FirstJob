@@ -41,7 +41,8 @@ const ContactPage = () => {
                         <div>
                             <p className="text-sm font-semibold">Phone</p>
                             <p className="text-gray-300 text-sm">
-                                +91 9211526625
+                                +91 ---------
+                                {/* +91 9211526625 */}
                             </p>
                         </div>
                     </div>

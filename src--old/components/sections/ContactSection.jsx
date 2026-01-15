@@ -5,15 +5,10 @@ import { Phone, Mail, MapPin } from 'lucide-react'; // or whichever icon library
 const ContactSection = () => {
      const [ref, isVisible] = useScrollReveal();
 
-     // const locations = [
-     //      { icon: Phone, title: "Call Us", value: "+91 9211526625", link: "tel:+919211526625", subtext: "Mon-Fri from 9am to 6pm" },
-     //      { icon: Mail, title: "Email Us", value: "akashucarrer@gmail.com", link: "mailto:akashucarrer@gmail.com", subtext: "We'll respond within 24 hours" },
-     //      { icon: MapPin, title: "Visit Us", value: "TA3107, 2nd Floor, Tughlak Extension, Main Okhla Road, Kalkaji, South Delhi, New Delhi, Delhi, India 110019", link: null, subtext: "" }
-     // ];
      const locations = [
-          { icon: Phone, title: "Call Us", value: "+91 --------", link: "tel:+91----", subtext: "Mon-Fri from 9am to 6pm" },
-          { icon: Mail, title: "Email Us", value: "-----@gmail.com", link: "mailto:----@gmail.com", subtext: "We'll respond within 24 hours" },
-          { icon: MapPin, title: "Visit Us", value: "--------", link: null, subtext: "" }
+          { icon: Phone, title: "Call Us", value: "+91 9211526625", link: "tel:+919211526625", subtext: "Mon-Fri from 9am to 6pm" },
+          { icon: Mail, title: "Email Us", value: "akashucarrer@gmail.com", link: "mailto:akashucarrer@gmail.com", subtext: "We'll respond within 24 hours" },
+          { icon: MapPin, title: "Visit Us", value: "TA3107, 2nd Floor, Tughlak Extension, Main Okhla Road, Kalkaji, South Delhi, New Delhi, Delhi, India 110019", link: null, subtext: "" }
      ];
 
      return (
