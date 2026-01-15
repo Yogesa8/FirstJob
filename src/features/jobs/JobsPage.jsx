@@ -136,7 +136,7 @@ export default function JobsPage() {
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#C1E1C1,transparent)] opacity-20"></div>
       </div>
 
-      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:max-w-[70%]">
+      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:max-w-[90%]">
         {/* Hero Section */}
         <div className="mb-12 text-center max-w-3xl mx-auto">
           <p className="text-xl text-gray-600 leading-relaxed mb-10">
